@@ -1,6 +1,11 @@
-# Pint.it
+# Pint<span></span>.it
 
-Mobile application revolving around social media and beers.
+Mobile application revolving around social media and beers
+(Not supported for IOS).
+
+## Portfolio
+Portfolio which documents the main-parts which I've done while being in Ticorporate **(in finnish)**.
+https://samulirukkila.github.io/Pint.it/
 
 ## APK
 
@@ -33,7 +38,20 @@ Pint<span></span>.it has been created using various technologies, mainly with Ja
 - **Images:** User's profile-pictures, post pictures etc.
   - Deployed to Cloudinary Image-service
 
-## Demo 
+# Demo 
 
+## Postauksien katselu
 
- 
+![Kuva postauksesta](demo-images/img-1.png)
+
+## Sisäänkirjautuminen 
+
+![Kuva sisäänkirjautumisesta](demo-images/img-2.png)
+
+## Kommentien selaaminen
+
+![Kuva kommenttien selaamisesta](demo-images/img-3.png)
+
+## Ilmoituksien lukeminen
+
+![Kuva ilmoituksien lukemisesta](demo-images/img-4.png)
