@@ -38,20 +38,5 @@ Pint<span></span>.it has been created using various technologies, mainly with Ja
 - **Images:** User's profile-pictures, post pictures etc.
   - Deployed to Cloudinary Image-service
 
-# Demo 
+![Collapsed Image](demo-images/collapsed.png) 
 
-## Postauksien katselu
-
-![Kuva postauksesta](demo-images/img-1.png)
-
-## Sisäänkirjautuminen 
-
-![Kuva sisäänkirjautumisesta](demo-images/img-2.png)
-
-## Kommentien selaaminen
-
-![Kuva kommenttien selaamisesta](demo-images/img-3.png)
-
-## Ilmoituksien lukeminen
-
-![Kuva ilmoituksien lukemisesta](demo-images/img-4.png)
