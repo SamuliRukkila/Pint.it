@@ -38,5 +38,7 @@ Pint<span></span>.it has been created using various technologies, mainly with Ja
 - **Images:** User's profile-pictures, post pictures etc.
   - Deployed to Cloudinary Image-service
 
+# Demo
+
 ![Collapsed Image](demo-images/collapsed.png) 
 
