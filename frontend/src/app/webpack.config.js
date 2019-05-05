@@ -232,7 +232,9 @@ module.exports = env => {
             // Define useful constants like TNS_WEBPACK
             new webpack.DefinePlugin({
                 "global.TNS_WEBPACK": "true",
-                "process": undefined,
+                "process.env": {
+                    
+                },
             }),
             // Remove all files from the out dir.
             new CleanWebpackPlugin([`${dist}/**/*`]),
@@ -260,7 +262,8 @@ module.exports = env => {
             new NativeScriptWorkerPlugin(),
             ngCompilerPlugin,
             // Does IPC communication with the {N} CLI to notify events when running in watch mode.
-            new nsWebpack.WatchStateLoggerPlugin(),
+            new nsWebpack.WatchStateLoggerPlugin()
+        ]
     };
 
 

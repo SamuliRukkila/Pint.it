@@ -105,6 +105,7 @@ export class LoginComponent implements OnInit {
         localStorage.setString('username', data.user.username);
         localStorage.setString('token', data.token);
         if (data.user.img) localStorage.setString('img', data.user.img);
+        if (data.user.bio) localStorage.setString('bio', data.user.bio)
       }
       // If there's no data (ONLY GOOGLE'S SOCIAL LOGIN WITHOUT SOCIAL-REGISTRATION)
       else {
@@ -112,6 +113,7 @@ export class LoginComponent implements OnInit {
         localStorage.remove('userCreds');
         localStorage.setNumber('id', creds.id);
         localStorage.setString('username', creds.username);
+        if (creds.bio) localStorage.setString('bio', creds.bio);
         if (creds.img) localStorage.setString('img', creds.img);
       } 
     }

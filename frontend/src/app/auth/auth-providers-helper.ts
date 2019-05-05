@@ -8,17 +8,19 @@ import {
   TnsOaProviderGoogle
 } from 'nativescript-oauth2/providers';
 
+import { creds } from '../social-creds';
+
 
 // Google's credentials for social-logging
 export function configureOAuthProviderGoogle(): TnsOaProvider {
   const googleProviderOptions: TnsOaProviderOptionsGoogle = {
     openIdSupport: 'oid-full',
     clientId:
-      '770380225594-fpki91pv3i3gsnd5t6f3270ka4hpncd4.apps.googleusercontent.com',
+      creds.googleClientId + '.apps.googleusercontent.com',
     redirectUri:
-      'com.googleusercontent.apps.770380225594-fpki91pv3i3gsnd5t6f3270ka4hpncd4:/auth',
+      'com.googleusercontent.apps.' + creds.googleClientId + ':/auth',
     urlScheme:
-      'com.googleusercontent.apps.770380225594-fpki91pv3i3gsnd5t6f3270ka4hpncd4',
+      'com.googleusercontent.apps.' + creds.googleClientId,
     scopes: ['email']
   };
   const googleProvider = new TnsOaProviderGoogle(googleProviderOptions);
@@ -29,8 +31,8 @@ export function configureOAuthProviderGoogle(): TnsOaProvider {
 export function configureOAuthProviderFacebook(): TnsOaProvider {
   const facebookProviderOptions: TnsOaProviderOptionsFacebook = {
     openIdSupport: 'oid-none',
-    clientId: '391045678343483',
-    clientSecret: '18d59f80dc9d188550d69717a16ac365',
+    clientId: creds.fbClientId,
+    clientSecret: creds.fbClientSecret,
     redirectUri: 'https://www.facebook.com/connect/login_success.html',
     scopes: ['email']
   };
