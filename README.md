@@ -34,7 +34,7 @@ Pint<span></span>.it has been created using various technologies, mainly with Ja
 - **Backend:** Express + Node.js + Sequelize-framework 
   - Deployed to Heroku
 - **Database:** MySQL
-  - Deployed to Amazon RDS
+  - Deployed to JawsDB
 - **Images:** User's profile-pictures, post pictures etc.
   - Deployed to Cloudinary Image-service
 
